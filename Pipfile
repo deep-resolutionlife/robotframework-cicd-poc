@@ -10,6 +10,7 @@ python-dotenv = "*"
 robotframework-seleniumlibrary = "*"
 robotframework-requests = "*"
 webdrivermanager = "*"
+robotframework-metrics = "==3.3.3"
 
 [dev-packages]
 
