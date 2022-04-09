@@ -32,4 +32,10 @@ jobs:
       run: |
         pipenv run webdrivermanager chrome
         pipenv run robot -d ./app/tests/results/ --loglevel TRACE ./app/tests/GoogleTest.robot
-        pipenv run robotmetrics --inputpath ./app/tests/results/ --output output.xml
+        pipenv run robotmetrics -M metrics.html --inputpath ./app/tests/results/ --output output.xml
+    - name: html to pdf
+      uses: fifsky/html-to-pdf-action@master
+      with:
+        htmlFile: ./app/tests/results/metrics.html
+        outputFile: ./app/tests/results/metrics.pdf
+        pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
