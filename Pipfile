@@ -13,5 +13,8 @@ webdrivermanager = "*"
 
 [dev-packages]
 
+[scripts]
+tests = "bash ./runtests.sh"
+
 [requires]
 python_version = "3.7"
