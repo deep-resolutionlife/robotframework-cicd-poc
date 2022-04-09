@@ -50,7 +50,7 @@ jobs:
         from: ${{secrets.MAIL_USERNAME}}
         secure: true
         body: Build job of ${{github.repository}} completed successfully!
-        html_body: ./app/tests/results/metrics.html
+        html_body: file://home/runner/work/robotframework-cicd-poc/robotframework-cicd-poc/app/tests/results/report.html
         reply_to: ${{secrets.MAIL_USERNAME}}
         in_reply_to: ${{secrets.MAIL_USERNAME}}
         ignore_cert: true
