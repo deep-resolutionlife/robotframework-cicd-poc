@@ -27,8 +27,8 @@ jobs:
          pipenv install
     - name: Lint
       run: |
-        pipenv run pylint ./robotframework-cicd-poc  
+        pipenv run pylint ./app  
     - name: Test
       run: |
         pipenv run webdrivermanager chrome
-        pipenv run robot -d ./robotframework-cicd-poc/tests/results/ --loglevel TRACE ./robotframework-cicd-poc/tests/GoogleTest.robot
+        pipenv run robot -d ./app/tests/results/ --loglevel TRACE ./app/tests/GoogleTest.robot
