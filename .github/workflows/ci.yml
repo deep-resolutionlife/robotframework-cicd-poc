@@ -25,11 +25,10 @@ jobs:
          python -m pip install --upgrade pip
          pip install -U pipenv
          pipenv install
-         pipenv shell
     - name: Lint
       run: |
-        pylint ./robotframework-cicd-poc  
+        pipenv run pylint ./robotframework-cicd-poc  
     - name: Test
       run: |
-        webdrivermanager chrome
-        robot -d ./robotframework-cicd-poc/tests/results/ --loglevel TRACE ./robotframework-cicd-poc/tests/GoogleTest.robot
+        pipenv run webdrivermanager chrome
+        pipenv run robot -d ./robotframework-cicd-poc/tests/results/ --loglevel TRACE ./robotframework-cicd-poc/tests/GoogleTest.robot
