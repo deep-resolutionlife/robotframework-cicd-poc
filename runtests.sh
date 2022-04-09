@@ -1,1 +1,2 @@
-robot -d ./robotframework-cicd-poc/tests/results/ --loglevel DEBUG ./robotframework-cicd-poc/tests/GoogleTest.robot
+webdrivermanager chrome
+robot -d ./robotframework-cicd-poc/tests/results/ --loglevel TRACE ./robotframework-cicd-poc/tests/GoogleTest.robot

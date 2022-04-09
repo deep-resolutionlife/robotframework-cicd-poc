@@ -9,7 +9,7 @@ pylint = "*"
 python-dotenv = "*"
 robotframework-seleniumlibrary = "*"
 robotframework-requests = "*"
-webdriver-manager = "*"
+webdrivermanager = "*"
 
 [dev-packages]
 
