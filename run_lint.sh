@@ -1,1 +1,1 @@
-pipenv run pylint ./app
+pylint ./app

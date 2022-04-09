@@ -1,3 +1,2 @@
- python -m pip install --upgrade pip
- pip install -U pipenv
- pipenv install
+python -m pip install --upgrade pip
+if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
