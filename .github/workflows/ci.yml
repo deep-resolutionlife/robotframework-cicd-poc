@@ -32,3 +32,11 @@ jobs:
       run: |
         pipenv run webdrivermanager chrome
         pipenv run robot -d ./app/tests/results/ --loglevel TRACE ./app/tests/GoogleTest.robot
+    - name: Download reports
+      uses: actions/download-artifact@v1
+      with:
+        name: reports
+    - name: Send report to commit
+      uses: joonvena/robotframework-reporter-action@v2
+      with:
+        gh_access_token: ${{ secrets.GH_TOKEN }}
