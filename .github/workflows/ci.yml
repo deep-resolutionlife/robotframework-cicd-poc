@@ -31,13 +31,7 @@ jobs:
       run: |
         webdrivermanager chrome
         robot -d ./app/tests/results/ --loglevel TRACE ./app/tests/GoogleTest.robot
-        robotmetrics -M metrics.html --inputpath ./app/tests/results/ --output output.xml
-    - name: html to pdf
-      uses: fifsky/html-to-pdf-action@master
-      with:
-        htmlFile: ./app/tests/results/metrics.html
-        outputFile: ./app/tests/results/metrics.pdf
-        pdfOptions: '{"format": "A4", "margin": {"top": "10mm", "left": "10mm", "right": "10mm", "bottom": "10mm"}}'
+        robotmetrics -M ./app/tests/results/metrics.html --inputpath ./app/tests/results/ --output output.xml
     - name: Send mail
       uses: dawidd6/action-send-mail@v3
       with:
@@ -45,15 +39,15 @@ jobs:
         server_port: 465
         username: ${{secrets.MAIL_USERNAME}}
         password: ${{secrets.MAIL_PASSWORD}}
-        subject: Robot Framework Test Result
+        subject: Robot Framework Test Report
         to: ${{secrets.MAIL_USERNAME}}
         from: ${{secrets.MAIL_USERNAME}}
         secure: true
         body: Build job of ${{github.repository}} completed successfully!
-        html_body: file://home/runner/work/robotframework-cicd-poc/robotframework-cicd-poc/app/tests/results/report.html
+        html_body: ./app/tests/results/metrics.html
         reply_to: ${{secrets.MAIL_USERNAME}}
         in_reply_to: ${{secrets.MAIL_USERNAME}}
         ignore_cert: true
         convert_markdown: true
-        attachments: ./app/tests/results/metrics.pdf
+        attachments: ./app/tests/results/metrics.html
         priority: low
