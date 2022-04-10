@@ -44,10 +44,10 @@ jobs:
         from: ${{secrets.MAIL_USERNAME}}
         secure: true
         body: Build job of ${{github.repository}} completed successfully!
-        html_body: ./app/tests/results/metrics.html
+        html_body: <div><div><p>Hi,</p><p>Please find the test report enclosed here within for your kind reference.</p><p>Thanks</p></div></div>
         reply_to: ${{secrets.MAIL_USERNAME}}
         in_reply_to: ${{secrets.MAIL_USERNAME}}
         ignore_cert: true
         convert_markdown: true
-        attachments: ./app/tests/results/metrics.html
+        attachments: ./app/tests/results/metrics.html, ./app/tests/results/log.html, ./app/tests/results/output.xml
         priority: low
