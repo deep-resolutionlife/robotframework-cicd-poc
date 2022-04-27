@@ -1,94 +1,94 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.7.6 on darwin)" generated="20220410 09:04:01.947" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.7.6 on darwin)" generated="20220410 21:15:59.622" rpa="false" schemaversion="3">
 <suite id="s1" name="GoogleTest" source="/Users/prabhdeepsingh/Documents/workspace/robotframework-cicd-poc/app/tests/GoogleTest.robot">
 <test id="s1-t1" name="Headless Chrome - Google Test" line="9">
 <kw name="Open Browser" library="SeleniumLibrary">
 <arg>about:</arg>
 <arg>headlesschrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220410 09:04:02.214" level="TRACE">Arguments: [ 'about:' | 'headlesschrome' ]</msg>
-<msg timestamp="20220410 09:04:02.214" level="INFO">Opening browser 'headlesschrome' to base url 'about:'.</msg>
-<msg timestamp="20220410 09:04:02.740" level="DEBUG">POST http://localhost:65359/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}</msg>
-<msg timestamp="20220410 09:04:02.741" level="DEBUG">Starting new HTTP connection (1): localhost:65359</msg>
-<msg timestamp="20220410 09:04:03.295" level="DEBUG">http://localhost:65359 "POST /session HTTP/1.1" 200 799</msg>
-<msg timestamp="20220410 09:04:03.296" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.296" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/timeouts {"script": 5000}</msg>
-<msg timestamp="20220410 09:04:03.297" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/timeouts HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:03.297" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.297" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/timeouts {"implicit": 0}</msg>
-<msg timestamp="20220410 09:04:03.297" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/timeouts HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:03.298" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.298" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/url {"url": "about:"}</msg>
-<msg timestamp="20220410 09:04:03.543" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/url HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:03.543" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.543" level="DEBUG">Opened browser with session id 3a8ab01d046d39209068885f849f90d5.</msg>
-<msg timestamp="20220410 09:04:03.544" level="TRACE">Return: 1</msg>
-<status status="PASS" starttime="20220410 09:04:02.214" endtime="20220410 09:04:03.544"/>
+<msg timestamp="20220410 21:15:59.883" level="TRACE">Arguments: [ 'about:' | 'headlesschrome' ]</msg>
+<msg timestamp="20220410 21:15:59.883" level="INFO">Opening browser 'headlesschrome' to base url 'about:'.</msg>
+<msg timestamp="20220410 21:16:00.404" level="DEBUG">POST http://localhost:51996/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}, "desiredCapabilities": {"browserName": "chrome", "pageLoadStrategy": "normal", "goog:chromeOptions": {"extensions": [], "args": ["--headless"]}}}</msg>
+<msg timestamp="20220410 21:16:00.406" level="DEBUG">Starting new HTTP connection (1): localhost:51996</msg>
+<msg timestamp="20220410 21:16:00.972" level="DEBUG">http://localhost:51996 "POST /session HTTP/1.1" 200 799</msg>
+<msg timestamp="20220410 21:16:00.973" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:00.973" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/timeouts {"script": 5000}</msg>
+<msg timestamp="20220410 21:16:00.974" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:00.974" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:00.974" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/timeouts {"implicit": 0}</msg>
+<msg timestamp="20220410 21:16:00.975" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:00.975" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:00.975" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/url {"url": "about:"}</msg>
+<msg timestamp="20220410 21:16:01.233" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:01.233" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:01.233" level="DEBUG">Opened browser with session id dd077728164e1e35dd1694f920fc7991.</msg>
+<msg timestamp="20220410 21:16:01.233" level="TRACE">Return: 1</msg>
+<status status="PASS" starttime="20220410 21:15:59.883" endtime="20220410 21:16:01.233"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <var>${originalImplicitWait}</var>
 <arg>5 seconds</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<msg timestamp="20220410 09:04:03.545" level="TRACE">Arguments: [ datetime.timedelta(seconds=5) ]</msg>
-<msg timestamp="20220410 09:04:03.545" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/timeouts {"implicit": 5000}</msg>
-<msg timestamp="20220410 09:04:03.545" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/timeouts HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:03.546" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.546" level="TRACE">Return: '0 seconds'</msg>
-<msg timestamp="20220410 09:04:03.546" level="INFO">${originalImplicitWait} = 0 seconds</msg>
-<status status="PASS" starttime="20220410 09:04:03.544" endtime="20220410 09:04:03.546"/>
+<msg timestamp="20220410 21:16:01.234" level="TRACE">Arguments: [ datetime.timedelta(seconds=5) ]</msg>
+<msg timestamp="20220410 21:16:01.234" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/timeouts {"implicit": 5000}</msg>
+<msg timestamp="20220410 21:16:01.235" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/timeouts HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:01.235" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:01.235" level="TRACE">Return: '0 seconds'</msg>
+<msg timestamp="20220410 21:16:01.235" level="INFO">${originalImplicitWait} = 0 seconds</msg>
+<status status="PASS" starttime="20220410 21:16:01.234" endtime="20220410 21:16:01.235"/>
 </kw>
 <kw name="Set Test Variable" library="BuiltIn">
 <arg>${originalImplicitWait}</arg>
 <doc>Makes a variable available everywhere within the scope of the current test.</doc>
-<msg timestamp="20220410 09:04:03.546" level="TRACE">Arguments: [ '${originalImplicitWait}' ]</msg>
-<msg timestamp="20220410 09:04:03.547" level="INFO">${originalImplicitWait} = 0 seconds</msg>
-<msg timestamp="20220410 09:04:03.547" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220410 09:04:03.546" endtime="20220410 09:04:03.547"/>
+<msg timestamp="20220410 21:16:01.236" level="TRACE">Arguments: [ '${originalImplicitWait}' ]</msg>
+<msg timestamp="20220410 21:16:01.236" level="INFO">${originalImplicitWait} = 0 seconds</msg>
+<msg timestamp="20220410 21:16:01.236" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220410 21:16:01.236" endtime="20220410 21:16:01.236"/>
 </kw>
 <kw name="Set Window Size" library="SeleniumLibrary">
 <arg>1100</arg>
 <arg>786</arg>
 <doc>Sets current windows size to given ``width`` and ``height``.</doc>
-<msg timestamp="20220410 09:04:03.547" level="TRACE">Arguments: [ 1100 | 786 ]</msg>
-<msg timestamp="20220410 09:04:03.547" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/window/rect {"x": null, "y": null, "width": 1100, "height": 786}</msg>
-<msg timestamp="20220410 09:04:03.653" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/window/rect HTTP/1.1" 200 51</msg>
-<msg timestamp="20220410 09:04:03.654" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.654" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220410 09:04:03.547" endtime="20220410 09:04:03.654"/>
+<msg timestamp="20220410 21:16:01.237" level="TRACE">Arguments: [ 1100 | 786 ]</msg>
+<msg timestamp="20220410 21:16:01.237" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/window/rect {"x": null, "y": null, "width": 1100, "height": 786}</msg>
+<msg timestamp="20220410 21:16:01.343" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/window/rect HTTP/1.1" 200 51</msg>
+<msg timestamp="20220410 21:16:01.344" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:01.344" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220410 21:16:01.236" endtime="20220410 21:16:01.344"/>
 </kw>
 <kw name="Delete All Cookies" library="SeleniumLibrary">
 <doc>Deletes all cookies.</doc>
-<msg timestamp="20220410 09:04:03.655" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20220410 09:04:03.655" level="DEBUG">DELETE http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/cookie {}</msg>
-<msg timestamp="20220410 09:04:03.677" level="DEBUG">http://localhost:65359 "DELETE /session/3a8ab01d046d39209068885f849f90d5/cookie HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:03.677" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:03.677" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220410 09:04:03.655" endtime="20220410 09:04:03.677"/>
+<msg timestamp="20220410 21:16:01.345" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220410 21:16:01.345" level="DEBUG">DELETE http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/cookie {}</msg>
+<msg timestamp="20220410 21:16:01.367" level="DEBUG">http://localhost:51996 "DELETE /session/dd077728164e1e35dd1694f920fc7991/cookie HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:01.367" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:01.367" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220410 21:16:01.344" endtime="20220410 21:16:01.367"/>
 </kw>
 <kw name="Go To" library="SeleniumLibrary">
 <arg>https://www.google.com</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<msg timestamp="20220410 09:04:03.678" level="TRACE">Arguments: [ 'https://www.google.com' ]</msg>
-<msg timestamp="20220410 09:04:03.678" level="INFO">Opening url 'https://www.google.com'</msg>
-<msg timestamp="20220410 09:04:03.678" level="DEBUG">POST http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/url {"url": "https://www.google.com"}</msg>
-<msg timestamp="20220410 09:04:04.514" level="DEBUG">http://localhost:65359 "POST /session/3a8ab01d046d39209068885f849f90d5/url HTTP/1.1" 200 14</msg>
-<msg timestamp="20220410 09:04:04.515" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:04.515" level="TRACE">Return: None</msg>
-<status status="PASS" starttime="20220410 09:04:03.678" endtime="20220410 09:04:04.515"/>
+<msg timestamp="20220410 21:16:01.367" level="TRACE">Arguments: [ 'https://www.google.com' ]</msg>
+<msg timestamp="20220410 21:16:01.367" level="INFO">Opening url 'https://www.google.com'</msg>
+<msg timestamp="20220410 21:16:01.368" level="DEBUG">POST http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/url {"url": "https://www.google.com"}</msg>
+<msg timestamp="20220410 21:16:02.105" level="DEBUG">http://localhost:51996 "POST /session/dd077728164e1e35dd1694f920fc7991/url HTTP/1.1" 200 14</msg>
+<msg timestamp="20220410 21:16:02.105" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:02.105" level="TRACE">Return: None</msg>
+<status status="PASS" starttime="20220410 21:16:01.367" endtime="20220410 21:16:02.106"/>
 </kw>
 <kw name="Capture Page Screenshot" library="SeleniumLibrary">
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<msg timestamp="20220410 09:04:04.515" level="TRACE">Arguments: [  ]</msg>
-<msg timestamp="20220410 09:04:04.516" level="DEBUG">GET http://localhost:65359/session/3a8ab01d046d39209068885f849f90d5/screenshot {}</msg>
-<msg timestamp="20220410 09:04:04.747" level="DEBUG">http://localhost:65359 "GET /session/3a8ab01d046d39209068885f849f90d5/screenshot HTTP/1.1" 200 111116</msg>
-<msg timestamp="20220410 09:04:04.747" level="DEBUG">Finished Request</msg>
-<msg timestamp="20220410 09:04:04.749" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
-<msg timestamp="20220410 09:04:04.749" level="TRACE">Return: '/Users/prabhdeepsingh/Documents/workspace/robotframework-cicd-poc/app/tests/results/selenium-screenshot-2.png'</msg>
-<status status="PASS" starttime="20220410 09:04:04.515" endtime="20220410 09:04:04.749"/>
+<msg timestamp="20220410 21:16:02.106" level="TRACE">Arguments: [  ]</msg>
+<msg timestamp="20220410 21:16:02.106" level="DEBUG">GET http://localhost:51996/session/dd077728164e1e35dd1694f920fc7991/screenshot {}</msg>
+<msg timestamp="20220410 21:16:02.363" level="DEBUG">http://localhost:51996 "GET /session/dd077728164e1e35dd1694f920fc7991/screenshot HTTP/1.1" 200 111116</msg>
+<msg timestamp="20220410 21:16:02.363" level="DEBUG">Finished Request</msg>
+<msg timestamp="20220410 21:16:02.365" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20220410 21:16:02.365" level="TRACE">Return: '/Users/prabhdeepsingh/Documents/workspace/robotframework-cicd-poc/app/tests/results/selenium-screenshot-5.png'</msg>
+<status status="PASS" starttime="20220410 21:16:02.106" endtime="20220410 21:16:02.365"/>
 </kw>
-<status status="PASS" starttime="20220410 09:04:02.213" endtime="20220410 09:04:04.749"/>
+<status status="PASS" starttime="20220410 21:15:59.882" endtime="20220410 21:16:02.365"/>
 </test>
-<status status="PASS" starttime="20220410 09:04:01.949" endtime="20220410 09:04:04.750"/>
+<status status="PASS" starttime="20220410 21:15:59.624" endtime="20220410 21:16:02.366"/>
 </suite>
 <statistics>
 <total>

@@ -12,5 +12,6 @@ Headless Chrome - Google Test
     set test variable    ${originalImplicitWait}
     Set Window Size    1100    786
     delete all cookies
+    sleep  2s
     Go to   https://www.google.com
     Capture Page Screenshot
